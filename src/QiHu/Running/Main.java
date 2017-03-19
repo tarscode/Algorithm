@@ -32,7 +32,7 @@ public class Main {
         double x1 = r * Math.cos(2 * PI * length2 / length);
         double y1 = (-1)*r * Math.sin(2 * PI * length2 / length);
         double y2 = (-1)*y1;
-        System.out.printf("%0.3 %.3f\n",x1,y1);
-        System.out.printf("%0.3 %.3f\n",x1,y2);
+        System.out.printf("%.3f %.3f\n",x1,y1);
+        System.out.printf("%.3f %.3f\n",x1,y2);
     }
 }
