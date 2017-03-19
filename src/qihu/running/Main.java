@@ -1,9 +1,9 @@
-package QiHu.Running;
+package qihu.running;
 
 import java.util.Scanner;
 
 /**
- * 【工程】: Algorithm 包名: QiHu.Running 类名: Main
+ * 【工程】: Algorithm 包名: qihu.running 类名: Main
  * 【作者】: liuyang
  * 【时间】: 17/3/18 下午8:02
  * 【题目】: 跑步

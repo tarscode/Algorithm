@@ -1,4 +1,4 @@
-package AcmCoder.findMax;
+package acmcoder.findMax;
 
 import java.util.Scanner;
 

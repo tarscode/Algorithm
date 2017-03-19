@@ -1,4 +1,4 @@
-package Alibaba;
+package alibaba;
 
 import java.util.HashMap;
 import java.util.Map;

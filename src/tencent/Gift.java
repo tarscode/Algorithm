@@ -1,4 +1,4 @@
-package Tencent;
+package tencent;
 
 /**
  * Created by liuyang on 17/2/28.

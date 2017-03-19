@@ -1,4 +1,4 @@
-package AcmCoder.XYZZY2;
+package acmcoder.XYZZY2;
 
 import java.util.Scanner;
 

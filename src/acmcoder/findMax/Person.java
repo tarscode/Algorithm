@@ -1,4 +1,4 @@
-package AcmCoder.findMax;
+package acmcoder.findMax;
 
 /**
  * Created by liuyang on 17/3/7.

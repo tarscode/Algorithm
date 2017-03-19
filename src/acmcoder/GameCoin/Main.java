@@ -1,9 +1,9 @@
-package AcmCoder.GameCoin;
+package acmcoder.GameCoin;
 
 import java.util.Scanner;
 
 /**
- * 【工程】: Algorithm 包名: AcmCoder.GameCoin 类名: Main
+ * 【工程】: Algorithm 包名: acmcoder.GameCoin 类名: Main
  * 【作者】: liuyang
  * 【时间】: 17/3/17 下午7:07
  * 【题目】: 游戏币
