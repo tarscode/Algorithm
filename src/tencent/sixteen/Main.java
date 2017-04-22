@@ -24,10 +24,7 @@ public class Main {
         int len = arr.length;
         for (int i = 0; i < len; i++) {
             if ((i + 1) % 16 == 1) {
-                String index = Integer.toHexString(i);//十六进制偏移
-                //String res = String.format("%0" + 8 + "d", Integer.parseInt(index));
-                //System.out.print(res);
-                System.out.printf("%08x",i);
+                System.out.printf("%08x",i);//十六进制偏移
             }
             String ch = Integer.toHexString(arr[i]);//十六进制字符
             System.out.print("  " + ch);

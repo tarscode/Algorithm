@@ -1,5 +1,6 @@
 package acmcoder.translateMarsLanguage;
 
+import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 /**
@@ -19,7 +20,7 @@ import java.util.*;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
         Scanner sc = new Scanner(System.in);
         int flag = 0;//状态标识
         Map<String, String> map = new HashMap<>();
