@@ -1,7 +1,7 @@
 package ctrip.test1;
 
 /**
- * 【工程】: Algorithm 包名: ctrip.test1 类名: Main
+ * 【工程】: Algorithm 包名: ctrip.reversestring 类名: Main
  * 【作者】: liuyang
  * 【时间】: 17/4/11 下午6:52
  * 【题目】:
