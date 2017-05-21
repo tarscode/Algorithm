@@ -30,7 +30,7 @@ public class Main {
             max = cur > max ? cur : max;
             list.add(cur);
         }
-        list.sort(Comparator.naturalOrder());
+        //list.sort(Comparator.naturalOrder());
         int n = list.size();
         int len = 0;
         for (int i = 1; i < max; i++) {
