@@ -13,7 +13,7 @@ import java.util.Scanner;
  * 【运行时间】:
  * 【时间复杂度】:
  * 【空间复杂度】:
- * 【备注】: 60%
+ * 【备注】: 注意long
  * 【思路】:
  */
 public class Main {
