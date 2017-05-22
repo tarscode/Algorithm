@@ -1,4 +1,4 @@
-package netease.racing;
+package netease.leihuo2017.racing;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,9 +1,9 @@
-package netease.pushbox;
+package netease.leihuo2017.pushbox;
 
 import java.util.Scanner;
 
 /**
- * 【工程】: Algorithm 包名: netease.pushbox 类名: Main
+ * 【工程】: Algorithm 包名: netease.leihuo2017.pushbox 类名: Main
  * 【作者】: liuyang
  * 【时间】: 17/5/15 下午7:48
  * 【题目】: 推箱子

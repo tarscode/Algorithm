@@ -1,9 +1,9 @@
-package netease.maxsum;
+package netease.leihuo2017.maxsum;
 
 import java.util.Scanner;
 
 /**
- * 【工程】: Algorithm 包名: netease.maxsum 类名: Main
+ * 【工程】: Algorithm 包名: netease.leihuo2017.maxsum 类名: Main
  * 【作者】: liuyang
  * 【时间】: 17/5/15 下午7:19
  * 【题目】: 最大和

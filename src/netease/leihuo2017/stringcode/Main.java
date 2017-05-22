@@ -1,9 +1,9 @@
-package netease.stringcode;
+package netease.leihuo2017.stringcode;
 
 import java.util.Scanner;
 
 /**
- * 【工程】: Algorithm 包名: netease.stringcode 类名: Main
+ * 【工程】: Algorithm 包名: netease.leihuo2017.stringcode 类名: Main
  * 【作者】: liuyang
  * 【时间】: 17/5/15 下午7:00
  * 【题目】: 字符串编码
