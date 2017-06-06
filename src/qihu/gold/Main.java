@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 【时间复杂度】:
  * 【空间复杂度】:
  * 【备注】: 40%
- *          http://exercise.acmcoder.com/online/online_judge_ques?ques_id=3863&konwledgeId=42
+ * http://exercise.acmcoder.com/online/online_judge_ques?ques_id=3863&konwledgeId=42
  * 【思路】:
  */
 public class Main {
@@ -39,27 +39,35 @@ public class Main {
         return Math.max(f[0][arr.length - 1], s[0][arr.length - 1]);
     }
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
-        int[] manA = new int[t];
-        int[] manB = new int[t];
         for (int i = 0; i < t; i++) {
             int n = scanner.nextInt();
-            int[] gold = new int[n];
-            int sum = 0;
+            int[] gold = new int[n]; //金子数组
             for (int j = 0; j < n; j++) {
                 gold[j] = scanner.nextInt();
-                sum += gold[j];
             }
-            int goldA = win2(gold);
-            int goldB = sum - goldA;
-            manA[i] = goldA;
-            manB[i] = goldB;
-        }
-        for(int i=0;i<t;i++){
-            System.out.println(String.format("Case #%d: %d %d", i+1, manA[i],manB[i]));
+            int[] res = compute(gold, n);
+            System.out.println(String.format("Case #%d: %d %d", i + 1, res[0], res[1]));
         }
     }
+
+    //计算结果
+    public static int[] compute(int[] gold, int n) {
+        int[][] dp = new int[n + 1][n + 1];//表示从i到j能够取的最大价值
+        int[] sum = new int[n + 1]; //前i项的和
+        for (int i = 1; i <= n; i++) {
+            dp[i][i] = gold[i - 1]; //初始化对角线的值
+            sum[i] = sum[i - 1] + gold[i - 1];
+        }
+        //对角线遍历->\
+        for (int i = n - 1; i > 0; i--) {
+            for (int j = i; j <= n; j++) {
+                dp[i][j] = sum[j] - sum[i - 1] - Math.min(dp[i + 1][j], dp[i][j - 1]);//i到j中的最大值
+            }
+        }
+        return new int[]{dp[1][n], sum[n] - dp[1][n]};
+    }
+
 }
