@@ -14,10 +14,11 @@ import java.util.Scanner;
  * 【空间复杂度】:
  * 【备注】: 100%
  * 【思路】:
- *  大数计算较为耗时，只保留后两位有效数字进行截断处理
+ * 大数计算较为耗时，只保留后两位有效数字进行截断处理
  */
 public class Main {
 
+    /*
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -33,12 +34,32 @@ public class Main {
                 flag = (int) (res % 10);
             }
             //超过3位的数字截取后两位处理
-            if(res>1000) {
+            if (res > 1000) {
                 String str = String.valueOf(res);
                 String tmp = str.substring(str.length() - 2, str.length());
                 res = Long.valueOf(tmp);
             }
         }
         System.out.println(num);
+    }*/
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int res = getNuberOfZero(n);
+        System.out.println(res);
+    }
+
+    //求n!结尾0的个数
+    public static int getNuberOfZero(int n) {
+        int num = 0;
+        for (int i = 1; i <= n; i++) {
+            int cur = i;
+            while (cur % 5 == 0) {
+                cur = cur / 5;
+                num++;
+            }
+        }
+        return num;
     }
 }
